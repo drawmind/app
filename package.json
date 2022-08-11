@@ -1,8 +1,9 @@
 {
-    "name": "webpack-tutorial",
+    "name": "dm-app",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
+    "private": true,
     "scripts": {
         "buildDev": "webpack --mode development",
         "build": "webpack --mode production",
@@ -22,6 +23,7 @@
         "sass": "^1.54.0",
         "sass-loader": "^13.0.2",
         "style-loader": "^2.0.0",
+        "ts-loader": "^9.3.1",
         "typescript": "^4.7.4",
         "webpack": "^5.33.2",
         "webpack-cli": "^4.6.0",
@@ -30,5 +32,8 @@
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
-    }
+    },
+    "workspaces": [
+        "packages/*"
+    ]
 }

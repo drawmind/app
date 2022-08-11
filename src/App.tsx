@@ -1,7 +1,8 @@
 import React from "react";
+import { Button } from "@dm/ui";
 
 const App = () => {
-    return <div>App</div>
+    return <Button>App</Button>;
 };
 
 export default App;

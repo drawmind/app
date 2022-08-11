@@ -8,10 +8,15 @@
         "noEmit": true,
         "allowJs": true,
         "skipLibCheck": true,
-        "isolatedModules": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+            "@dm/ui": ["packages/ui/src/"]
+        },
+        "sourceMap": true
     },
     "include": [
-        "src"
+        "src",
+        "packages"
     ]
 }
